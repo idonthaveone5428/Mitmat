@@ -1,3 +1,6 @@
+[⬇️ Download Latest Release](https://github.com/idonthaveone5428/MitMat-1.0/releases/latest)
+
+
 ## What's inside MitMat? 👀
 
 **1. Home Dashboard — Everything at a glance**
