@@ -1,37 +1,37 @@
-MitMat — হিসাবের ঝামেলা এবার শেষ!
+## What's inside MitMat? 👀
 
-বন্ধুদের সাথে আড্ডা, খাওয়া-দাওয়া, ঘোরাঘুরি—সবই ভালো। শুধু শেষে বিলের হিসাবটা ছাড়া। 💀
+**1. Home Dashboard — Everything at a glance**
 
-ধরেন, আপনারা কয়েকজন বন্ধু মিলে রেস্টুরেন্টে খেতে গেছেন। কেউ বিল দিলেন ১২০০ টাকা, কেউ দিলেন ৫০০ টাকা, আর কেউ হয়তো কিছুই দিলেন না।
+<img width="1080" height="2400" alt="2245" src="https://github.com/user-attachments/assets/51b0adfc-cfa6-41ee-a953-a36353f9ceac" />
 
-এখন শুরু হলো আসল drama:
+সব গ্রুপের মোট খরচ, পাওনা, দেনা আর Active Groups—সবকিছু এক জায়গায়। অ্যাপ খুলেই বুঝে যাবেন আপনার হিসাবের অবস্থা।
 
-- কে কত টাকা দিয়েছে?
-- সবার ভাগে কত টাকা পড়েছে?
-- কে কাকে কত টাকা ফেরত দেবে?
-- সব হিসাব কি আবার ম্যানুয়ালি করতে হবে?
+**2. Smart Settlements — No more manual math!**
 
-এই জায়গাতেই MitMat-এর entry!
+<img width="1080" height="2400" alt="2249" src="https://github.com/user-attachments/assets/8361eb18-9693-43be-ba8e-9313e4a04f05" />
 
-MitMat দিয়ে খুব সহজেই বন্ধুদের সাথে খরচের হিসাব রাখতে পারবেন। কে কত টাকা দিয়েছে, কার ভাগে কত পড়েছে, আর শেষ পর্যন্ত কে কাকে কত টাকা দেবে—সব হিসাব নিজে থেকেই হয়ে যাবে।
+কে কাকে কত টাকা দেবে, MitMat নিজেই হিসাব করে দেবে। এমনকি অপ্রয়োজনীয় লেনদেন কমিয়ে settlement-ও সহজ করে দেবে।
 
-What can you do with MitMat?
+**3. Activity & History — Nothing gets lost**
 
-- Create Groups: বন্ধুদের নিয়ে আলাদা expense group তৈরি করুন।
-- Add Expenses: কে কত টাকা খরচ করেছে, সহজেই যোগ করুন।
-- Split Equally: সবার মধ্যে সমানভাবে বিল ভাগ করুন।
-- Custom Split: যার যতটুকু খরচ, তার হিসাব আলাদাভাবে সেট করুন।
-- Track Balances: কে কার কাছে কত টাকা পাবে বা দেবে, সহজেই দেখুন।
-- Expense History: আগের সব খরচের হিসাব এক জায়গায় রাখুন।
-- Share Settlements: হিসাব শেয়ার করে সবাইকে জানিয়ে দিন।
-- Offline Support: ইন্টারনেট ছাড়াও নিজের হিসাব ম্যানেজ করুন।
+<img width="1080" height="2400" alt="2251" src="https://github.com/user-attachments/assets/21ce5c08-b493-4208-8a04-7c56eeeeb12e" />
 
-The idea behind MitMat
 
-এটা কোনো বিশাল financial management platform না। এটা ছোট্ট একটা app, যেটা বন্ধুদের সাথে টাকা-পয়সার হিসাব রাখার boring কাজটাকে সহজ করে দেয়।
+আগের সব Expense ও Settlement এক জায়গায়। Search আর Filter ব্যবহার করে যেকোনো পুরোনো হিসাব সহজেই খুঁজে নিন।
 
-কারণ বন্ধুত্বে হিসাব থাকা ভালো, কিন্তু হিসাব নিয়ে ঝামেলা থাকা ভালো না।
 
-MitMat — হিসাব থাকুক, ঝামেলা না।
+**4. Backup & Restore — Keep your data safe**
 
-Made with simplicity in mind.
+<img width="1080" height="2400" alt="2252" src="https://github.com/user-attachments/assets/ea816b5b-a84b-46d1-82a2-2715a222c416" />
+
+
+নির্দিষ্ট Group নির্বাচন করে Backup Export করুন। প্রয়োজনের সময় নিজের হিসাবের ডেটা আবার ব্যবহার করতে পারবেন।
+
+**5. Open Source & 100% Offline — No internet, no account, no drama!**
+
+MitMat ব্যবহারে কোনো ইন্টারনেট বা অ্যাকাউন্টের প্রয়োজন নেই। সব হিসাব আপনার ডিভাইসেই থাকে। আর হ্যাঁ, এর Source Code সবার জন্য উন্মুক্ত!
+
+**Small app, useful features, zero unnecessary drama.**
+
+**MitMat — হিসাব থাকুক, ঝামেলা না।**
+
