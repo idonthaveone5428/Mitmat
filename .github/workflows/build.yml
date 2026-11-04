@@ -1,0 +1,92 @@
+name: Build Mitmat Android App
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+    inputs:
+      build_type:
+        description: 'Build Type to produce'
+        required: true
+        default: 'debug'
+        type: choice
+        options:
+          - debug
+          - bundle
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Restore Debug Keystore
+        run: |
+          if [ -f debug.keystore.base64 ]; then
+            echo "Decoding debug.keystore from debug.keystore.base64..."
+            base64 -d debug.keystore.base64 > debug.keystore
+          else
+            echo "Generating fallback debug.keystore..."
+            keytool -genkeypair -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+      - name: Prepare environment configuration
+        run: |
+          if [ ! -f .env ]; then
+            echo "Creating .env from .env.example..."
+            cp .env.example .env
+          fi
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x gradlew
+
+      - name: Run Unit Tests
+        run: ./gradlew testDebugUnitTest
+
+      - name: Build Debug APK
+        if: ${{ github.event.inputs.build_type != 'bundle' }}
+        run: ./gradlew assembleDebug --stacktrace
+
+      - name: Build Android App Bundle (AAB)
+        if: ${{ github.event.inputs.build_type == 'bundle' }}
+        run: ./gradlew bundleDebug --stacktrace
+
+      - name: Upload Debug APK
+        if: ${{ github.event.inputs.build_type != 'bundle' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: mitmat-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          retention-days: 30
+
+      - name: Upload Debug Bundle (AAB)
+        if: ${{ github.event.inputs.build_type == 'bundle' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: mitmat-debug-bundle
+          path: app/build/outputs/bundle/debug/*.aab
+          retention-days: 30
+
+      - name: Job Summary
+        run: |
+          echo "### Mitmat Build Successful! :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "- **Package:** \`dev.rakib.mitmat\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit:** \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Artifacts:** Check the **Artifacts** section at the bottom of the workflow run to download your APK/AAB." >> $GITHUB_STEP_SUMMARY
