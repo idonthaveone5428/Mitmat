@@ -1,4 +1,4 @@
-[⬇️ Download MitMat v1.0.0]((https://github.com/idonthaveone5428/Mitmat/releases/download/v1.0.0/mitmat_stable_v_1.0.apk))
+[⬇️ Download MitMat v1.0.0 (APK)](https://github.com/idonthaveone5428/MitMat/releases/download/v1.0.0/mitmat_stable_v_1.0.apk)
 
 ## What's inside MitMat? 👀
 
