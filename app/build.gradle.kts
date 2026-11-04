@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-  namespace = "com.example"
+  namespace = "dev.rakib.mitmat"
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
-    applicationId = "com.aistudio.mitmat.vbrtnq"
+    applicationId = "dev.rakib.mitmat"
     minSdk = 24
     targetSdk = 36
     versionCode = 1
