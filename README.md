@@ -1,5 +1,4 @@
-[⬇️ Download Latest Release](https://github.com/idonthaveone5428/MitMat-1.0/releases/latest)
-
+[⬇️ Download MitMat v1.0.0](https://github.com/idonthaveone5428/Mitmat/releases/tag/v1.0.0)
 
 ## What's inside MitMat? 👀
 
