@@ -1,22 +1,37 @@
+MitMat — হিসাবের ঝামেলা এবার শেষ!
 
+বন্ধুদের সাথে আড্ডা, খাওয়া-দাওয়া, ঘোরাঘুরি—সবই ভালো। শুধু শেষে বিলের হিসাবটা ছাড়া। 💀
 
-# Mitmat (মিটমাট) — Split bills. Stay even.
+ধরেন, আপনারা কয়েকজন বন্ধু মিলে রেস্টুরেন্টে খেতে গেছেন। কেউ বিল দিলেন ১২০০ টাকা, কেউ দিলেন ৫০০ টাকা, আর কেউ হয়তো কিছুই দিলেন না।
 
-A modern, offline-first Android expense-splitting application built with Kotlin and Jetpack Compose. Designed for friends, flatmates, and travel groups to easily track expenses, split bills (equally, by percentage, or custom exact shares), and simplify settlements.
+এখন শুরু হলো আসল drama:
 
-## Automated Builds (GitHub Actions)
+- কে কত টাকা দিয়েছে?
+- সবার ভাগে কত টাকা পড়েছে?
+- কে কাকে কত টাকা ফেরত দেবে?
+- সব হিসাব কি আবার ম্যানুয়ালি করতে হবে?
 
-This repository includes a GitHub Actions workflow in `.github/workflows/build.yml` that automatically builds and tests the app:
+এই জায়গাতেই MitMat-এর entry!
 
-1. **Automatic Builds**: Runs unit tests and builds the APK automatically on every push or pull request to `main` / `master`.
-2. **Manual Builds**: Go to the **Actions** tab on GitHub, select **Build Mitmat Android App**, click **Run workflow**, and choose between:
-   - `debug` (Builds installable APK)
-   - `bundle` (Builds Android App Bundle `.aab`)
-3. **Download APK**: Once the workflow finishes, scroll down to the **Artifacts** section on the workflow run page to download `mitmat-debug-apk`.
+MitMat দিয়ে খুব সহজেই বন্ধুদের সাথে খরচের হিসাব রাখতে পারবেন। কে কত টাকা দিয়েছে, কার ভাগে কত পড়েছে, আর শেষ পর্যন্ত কে কাকে কত টাকা দেবে—সব হিসাব নিজে থেকেই হয়ে যাবে।
 
-## Features
-- **Group Expense Management:** Custom group currencies and color themes.
-- **Selective Backups:** Choose specific groups or all groups to export/import via JSON backup.
-- **Trash Bin & Archive:** 7-day auto-delete trash bin with instant restore or permanent delete, plus read-only archived groups.
-- **AMOLED True-Black & Themes:** Ash dark background, cream light mode, and true black AMOLED mode.
-- **Smart Settlements:** Computes minimum required transfers to settle balances.
+What can you do with MitMat?
+
+- Create Groups: বন্ধুদের নিয়ে আলাদা expense group তৈরি করুন।
+- Add Expenses: কে কত টাকা খরচ করেছে, সহজেই যোগ করুন।
+- Split Equally: সবার মধ্যে সমানভাবে বিল ভাগ করুন।
+- Custom Split: যার যতটুকু খরচ, তার হিসাব আলাদাভাবে সেট করুন।
+- Track Balances: কে কার কাছে কত টাকা পাবে বা দেবে, সহজেই দেখুন।
+- Expense History: আগের সব খরচের হিসাব এক জায়গায় রাখুন।
+- Share Settlements: হিসাব শেয়ার করে সবাইকে জানিয়ে দিন।
+- Offline Support: ইন্টারনেট ছাড়াও নিজের হিসাব ম্যানেজ করুন।
+
+The idea behind MitMat
+
+এটা কোনো বিশাল financial management platform না। এটা ছোট্ট একটা app, যেটা বন্ধুদের সাথে টাকা-পয়সার হিসাব রাখার boring কাজটাকে সহজ করে দেয়।
+
+কারণ বন্ধুত্বে হিসাব থাকা ভালো, কিন্তু হিসাব নিয়ে ঝামেলা থাকা ভালো না।
+
+MitMat — হিসাব থাকুক, ঝামেলা না।
+
+Made with simplicity in mind.
